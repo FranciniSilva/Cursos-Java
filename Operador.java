@@ -2,11 +2,10 @@ public class Operador {
 
 	public static void main(String[] args) {
 		
-		double x = 	6;
-		double y = --x;//pré dencremento
+		int x = 6;
 
-		System.out.println("x=" +x);
-		System.out.println("y=" +y);
+		System.out.println(x == 6);
+		System.out.println(x == 7);
 
 	}
 	
