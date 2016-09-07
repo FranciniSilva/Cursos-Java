@@ -4,8 +4,9 @@ public class Operador {
 		
 		Integer x = 6;
 
-		System.out.println(x instanceof Integer);
-
+		System.out.println((x >= 1) && (x <= 10));
+		System.out.println((x >= 1) || (x <= 5));
+		System.out.println(!(x >= 1)); //operador de negação
 	}
 	
 }
