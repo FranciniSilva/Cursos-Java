@@ -6,15 +6,22 @@ public class Variavel {
 	
 	public static void main(String[] args) {
 		
-		int populacaoBrasileira = 203429773;
-		populacaoBrasileira = 2034297737676;
+		Integer idade = new Integer(31);
+		Double preco = new Double("12.45");
+		double d = preco.doubleValue();
+		int i = preco.intValue();
+		byte b = preco.byteValue();
 
+		Boolean casado = new Boolean("true");
 
-		final char SEXO_MASCULINO = 'M';//constantes final são escritas com letras Maiusculas. Caso o nome seja composto deve ser separadas com sinal de underline
-		final char SEXO_FEMININO = 'F';
-		final double PI = 3.1415;
+		//CONVERSÃO ESTÁTICA
+		double d1 = Double.parseDouble("123.45");
+		int i1 = Integer.parseInt("123");
+		float f1 = Float.parseFloat("3.14");
 
-		System.out.println(PI);
+		int i2 = Integer.valueOf("101011", 2);//Converte o valor binário base 2
+		System.out.println(i2);
+
 
 	}
 }
