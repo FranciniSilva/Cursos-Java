@@ -6,12 +6,15 @@ public class Variavel {
 	
 	public static void main(String[] args) {
 		
-		//Variável Primitiva
-		int x = 7;
+		int populacaoBrasileira = 203429773;
+		populacaoBrasileira = 2034297737676;
 
-		//Variável de Referência
-		String y = "XTI";
-		y = "xti.com.br";
-		y = null;
+
+		final char SEXO_MASCULINO = 'M';//constantes final são escritas com letras Maiusculas. Caso o nome seja composto deve ser separadas com sinal de underline
+		final char SEXO_FEMININO = 'F';
+		final double PI = 3.1415;
+
+		System.out.println(PI);
+
 	}
 }
