@@ -2,9 +2,11 @@ public class Operador {
 
 	public static void main(String[] args) {
 		
-		double x = 	7 % 3;
+		double x = 	6;
+		double y = ++x;
 
-		System.out.println(x);
+		System.out.println("x=" +x);
+		System.out.println("y=" +y);
 
 	}
 	
