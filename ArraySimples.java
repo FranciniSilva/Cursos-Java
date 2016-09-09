@@ -1,20 +1,22 @@
-import java.util.Arrays;
-import java.util.Random;
+import java.util.ArrayList;
 
 public class ArraySimples {
 
 	public static void main(String[] args) {
 
-		String[] faces = {"A", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Valete", "Dama", "Rei"};
-		String[] nipes = {"Espadas", "Paus", "Copas", "Ouros"};
+		ArrayList<String> cores = new ArrayList<>();
+		cores.add("Branco");
+		cores.add(0, "Vermelho");
+		cores.add("Amarelo");
+		cores.add("Azul");
+		System.out.println(cores.toString());
+		System.out.println("Tamanho = " + cores.size());
+		System.out.println("Elemento2 = " + cores.get(2));
+		System.out.println("Indice Branco = " + cores.indexOf("Branco"));
 
-		Random r = new Random();
+		cores.remove("Branco");
+		System.out.println("Contém a cor amarelo?" + cores.contains("Amarelo"));
 
-		String face = faces[r.nextInt(faces.length)];
-		String nipe = nipes[r.nextInt(nipes.length)];
-
-		String carta = face + " " + nipe;
-		System.out.println(carta);
 
 	}
 }
