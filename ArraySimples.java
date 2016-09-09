@@ -1,19 +1,24 @@
 import java.util.Arrays;
+import java.util.Random;
 
 public class ArraySimples {
 
 	public static void main(String[] args) {
 
-		String[] uma = {"Francini", "Ricardo"};
-		System.out.println(uma[0]);
+		String[] faces = {"A", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Valete", "Dama", "Rei"};
+		String[] nipes = {"Espadas", "Paus", "Copas", "Ouros"};
 
-		String[][] duas = {{"Francini", "F", "SP"},{"Ricardo", "M", "SP"}};
+		Random r = new Random();
 
-		duas[1][0] = "SANDRA";
+		int indiceFace = r.nextInt(faces.length);
+		String face = faces[indiceFace];
+
+		int indiceNipe = r.nextInt(nipes.length);
+		String nipe = nipes[indiceNipe];
 
 
-		System.out.println(duas[1][0]);
-
+		String carta = face + " " + nipe;
+		System.out.println(carta);
 
 	}
 }
