@@ -10,12 +10,8 @@ public class ArraySimples {
 
 		Random r = new Random();
 
-		int indiceFace = r.nextInt(faces.length);
-		String face = faces[indiceFace];
-
-		int indiceNipe = r.nextInt(nipes.length);
-		String nipe = nipes[indiceNipe];
-
+		String face = faces[r.nextInt(faces.length)];
+		String nipe = nipes[r.nextInt(nipes.length)];
 
 		String carta = face + " " + nipe;
 		System.out.println(carta);
